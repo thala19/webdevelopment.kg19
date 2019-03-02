@@ -1,0 +1,21 @@
+.site-header{
+    background-color: bisque;
+    height: 100vh;
+    font-family: monospace;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+    body{margin:0;
+    }
+    .pic{
+        border-radius: 70%;
+        height: 200px;
+        width: 200px;
+    }
+    .site-text{
+        margin: 10px;
+    }

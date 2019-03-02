@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>personal expense app </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <h1 id="headingtotal"></h1>
+     <!-- <button id="btnCounter">+</button> -->
+      <!-- <button id="btnAddExpense">+</button> -->
+    <input  id="inputAmount" type="text"></input>
+    <button id="btnAddExpense">+</button>
+    <script >
+
+const headingEL=document.querySelector("#headingtotal")
+
+
+
+
+
+
+
+
+
+
+             //let counter=0;
+               // counter=counter+1;
+              //  console.log(counter)
+                // function to increment a number  
+               // function counterIncrement() {
+                 //   counter=counter+1;
+                   // console.log(counter);
+
+
+                //}
+// init value of expense at 0
+let totalExpense=0;
+headingEL.textContent=totalExpense;
+
+function addEXpensetoTotal()
+{
+
+const inputElement=document.querySelector("#inputAmount");
+const textAmount=inputElement.value;
+//console.log({textAmount});
+const expense =parseInt(textAmount,10);
+//console.log({expense})
+
+totalExpense=totalExpense+expense;
+//console.log({totalExpense});
+headingEL.textContent=totalExpense;
+}
+
+
+
+                // read value from input elemnt
+            //const element = document.querySelector("#btnCounter");
+            const element = document.querySelector("#btnAddExpense");
+
+            //console.log(element);
+            //element.addEventListener("click",counterIncrement,false);
+            element.addEventListener("click",addEXpensetoTotal,false);
+                
+//counterIncrement();
+//console.log(counter)
+
+                </script>
+</body>
+</html>
